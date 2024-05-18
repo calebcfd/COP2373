@@ -1,0 +1,43 @@
+Created by Caleb Carbon on 5/18/2024
+
+
+This program simulates a Magic 8 Ball, which is a fortune telling toy that displays a random response to a yes or no question.
+The program gives a random answer from a file called 8ball_responses.txt and repeats until the user types 'quit'.
+
+
+Variables:
+
+Variable file represents 8ball_responses.txt.
+
+Variable responses is a list that holds answers from 8ball_responses.txt.
+
+Variable question hold user input.
+
+
+Functions:
+
+Function main() embodies the entire program
+
+
+Steps:
+
+Step 1: Import random module.
+
+Step 2: Define and call main() function.
+
+Step 3: Open 8ball_responses.txt in read mode as variable file.
+
+Step 4: Initialize list responses as empty list.
+
+Step 5: Use a for each loop to append every line from 8ball_responses.txt to responses.
+
+Step 6: A while loop begins that will continuously prompts the user to ask questions.
+
+Step 7: Variable question stores user input.
+
+Step 8: Variable question is converted to lowercase.
+
+Step 9: If question is the string 'quit', break the loop. If not, print a random answer from the responses list and repeat the loop.
+
+Link to github:
+https://github.com/calebcfd/COP2373
