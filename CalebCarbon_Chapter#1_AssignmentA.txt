@@ -33,3 +33,6 @@ Step 5: If the user input is acceptable, tickets_sold increases by the number of
 Step 6: If the user input is an unacceptable integer, the user is notified and the while loop repeats.
 
 Step 7: When tickets_sold reaches 20, the while loop completes and the total number of buyers is output.
+
+Link to github:
+https://github.com/calebcfd/COP2373
