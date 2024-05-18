@@ -1,0 +1,35 @@
+Created by Caleb Carbon on 5/18/2024
+
+
+This application is made to pre-sell a limited number of cinema tickets. Each buyer can buy up to 4 tickets.
+No more than 20 tickets can be sold total. The user is propted for the desired number of tickets and then the remaining number of tickets is displayed.
+This process is repeated until all tickets have been sold. Then it displays the total number of buyers.
+
+
+Variables:
+
+tickets_sold is an integer that initializes at 0 and acts as an accululator for the program's while loop.
+
+total_sales is an integer that initializes at 0 and increments by 1 each time a sale is made.
+
+
+Functions:
+
+main() Embodies the entire program and is called once to start the program.
+
+
+Steps:
+
+Step 1: Main function is defined and called to start the program.
+
+Step 2: The user is prompted to input the number of tickets they would like.
+
+Step 3: Using a try block, the user's input is converted to an integer and an except ValueError statement is used to reject non-integer inputs.
+
+Step 4: An if/else statement determines if the user input is between 1 and 4 and if there are enough tickets remaining.
+
+Step 5: If the user input is acceptable, tickets_sold increases by the number of tickets ordered, total_sales increments by 1, the user is notified, and the while loop repeats.
+
+Step 6: If the user input is an unacceptable integer, the user is notified and the while loop repeats.
+
+Step 7: When tickets_sold reaches 20, the while loop completes and the total number of buyers is output.
