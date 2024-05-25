@@ -1,0 +1,42 @@
+Created by Caleb Carbon on 5/25/2024
+
+
+This program takes a user's input and compares it to a list of 30 known spam keywords.
+Then, it informs the user how many spam indicators were found, the likelihood that the input message is spam, and which keywords found indicate spam.
+
+
+VARIABLES:
+
+    Variable 'flags' is a list that contains 30 known spam keywords as strings.
+
+    Variable 'counter' initializes at 0 and increments by 1 with each spam keyword found in the user input.
+
+    Variable 'used' initializes as an empty list and later populates with found spam keywords.
+
+    Variable 'mail' stores user input to evaluate for spam.
+
+    Variable 'likelihood' evaluates to a string based on the final value of variable 'counter' in order to estimate the likelihood that the user input is spam.
+
+    Variable 'used_string' joins the keywords in variable 'used'.
+
+
+FUNCTIONS:
+
+    Function 'main()' houses the whole program.
+
+
+STEPS:
+
+    Step 1: Define and call function 'main()'.
+
+    Step 2: Define variables 'flags', 'counter', and 'used' for later use.
+
+    Step 3: Ask user for input ans store in variable 'mail'.
+
+    Step 4: A for loop checks if the user input contains each keyword in 'flags', and if so, increments 'counter' by 1 and appends the keyword to 'used'.
+
+    Step 5: Variable 'likelihood' evaluates to a string based on the final value of variable 'counter'.
+
+    Step 6: Variable 'used_string' joins the keywords in variable 'used' to a string.
+
+    Step 7: The user is notified how many spam keywords were found, the likelihood that the input message is spam, and which spam indicators were found.
