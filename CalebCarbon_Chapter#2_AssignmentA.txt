@@ -40,3 +40,5 @@ STEPS:
     Step 6: Variable 'used_string' joins the keywords in variable 'used' to a string.
 
     Step 7: The user is notified how many spam keywords were found, the likelihood that the input message is spam, and which spam indicators were found.
+
+Link to github: https://github.com/calebcfd/COP2373
