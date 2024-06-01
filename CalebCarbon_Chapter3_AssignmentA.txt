@@ -1,0 +1,76 @@
+Created by Caleb Carbon on 6/1/24.
+
+
+Function main() houses two functions called verified_cost() and catalogue(). Function catalogue() uses a while loop to recieve and store user inputs until the user types 'quit'.
+Function verified_cost is used by catalogue() to ensure a user's input can be converted to an integer or a float, and if not, it prompts the user to try again.
+After catalogue() is called, the user inputs are stored in variable 'list'. Three new variables 'total', 'highest', and 'lowest' are then calculated using the reduce() method and printed to the user.
+If the user ends catalogue() before inputing any values, calculating variables 'total', 'highest', and 'lowest' are skipped and the user is notified that the program has ended.
+
+
+VARIABLES:
+
+    In scope of function 'main()':
+
+        list: Variable 'list' calls the function 'catalogue()' and stores the output.
+
+        total: Variable 'total' uses the reduce() method and a lambda function to sum all expenses from 'list'.
+
+        highest: Variable 'highest' uses the reduce() method and a lambda function to find the highest of all expenses from 'list'.
+
+        lowest: Variable 'lowest' uses the reduce() method and a lambda function to find the lowest of all expenses.
+
+    In scope of function 'verified_cost()':
+
+        amount: Variable 'amount' prompts the user for an expense amount.
+
+    In scope of function 'catalogue()':
+
+        expenses: Variable 'expenses' stores user inputs as a 2D list.
+
+        type: Variable 'type' prompt the user for an expense type or the keyword 'quit', case insensitive.
+
+        cost: Variable 'cost' calls the function 'verified_cost()' and stores the output.
+
+
+FUNCTIONS:
+
+    main(): Function 'main()' embodies the program and includes functions 'verified_cost' and 'catalogue' in it's scope.
+
+    verified_cost(): Function 'verified_cost()' is used by function 'catalogue()' to ensure a user's input can be converted to an integer or a float, and if not, it prompts the user to try again. 
+
+    catalogue(): Function 'catalogue()' uses a while loop to recieve and store user inputs until the user types 'quit'.
+
+
+STEPS:
+
+    Step 1: Import regular expressions and functools.
+
+    Step 2: Define and call function 'main()'.
+
+    Step 3: Define functions 'verified_cost' and 'catalogue()'.
+
+    Step 4: Variable 'list' calls function 'catalogue()'.
+
+    Step 5: Function 'catalogue()' initializes variable 'expenses' as an empty list and begins a while loop to populate it with user inputs.
+
+    Step 6: Within the while loop, variable 'type' prompts the user to enter and expense type, or input 'quit' to cease entering expenses.
+
+    Step 7: An if statement uses a regular expression to check variable 'type'. If 'quit' is the value of 'type', the the while loop breaks and function 'catalogue()' returns variable 'expenses'.
+
+    Step 8: Variable 'cost' calls function 'verified_cost()' to obtain expense amount from user and convert it to an integer or float.
+
+    Step 9: Within function 'verified_cost()', variable 'amount' prompts user to enter expense amount.
+
+    Step 10: An if/else statement uses the isdigit() method to check if input can be converted to an integer or float. If conversion is impossible, recur function 'verified_cost()' to prompt another input.
+
+    Step 11: After function 'verified_cost()' returns a number, variables 'type' and 'cost' are stored as a list inside variable 'expenses'.
+
+    Step 12: When function 'catalogue' completes, an if/else statement determines if the list of expenses is empty. If so, close the program. If not, proceed to calculate and display expenses.
+
+    Step 13: Variables 'total', 'highest', and 'lowest' are calculated using the reduce() method and a lambda function.
+
+    Step 14: Variables 'total', 'highest', and 'lowest' are printed to the user, formatted to strings to increase readability.
+
+
+Link to github: https://github.com/calebcfd/COP2373
+
