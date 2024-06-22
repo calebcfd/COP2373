@@ -1,0 +1,57 @@
+Created by Caleb Carbon on 6/22/2024
+
+This program propts the user for a phone number, social security number, and zip code.
+Then it uses a function to validate the information by comparing it to a regular expression and notifies the user of the result.
+
+Variables:
+
+    phone: In function val_phone(), variable phone stores the value of a findall method which compares argument str_phone to a regex matching a phone number.
+
+    ssn: In function val_ssn(), variable ssn stores the value of a findall method which compares argument str_ssn to a regex matching a social security number.
+
+    zip: In function val_zip(), variable zip stores the value of a findall method which compares argument str_zip to a regex matching a zip code.
+
+    user_phone: In function main(), variable user_phone prompts the user for a phone number and stores the input.
+
+    user_ssn: In function main(), variable user_ssn prompts the user for a social security number and stores the input. 
+
+    user_zip: In function main(), variable user_zip prompts the user for a zip code and stores the input.
+
+
+Functions:
+
+    val_phone(): Function val_phone() takes an argument and uses a findall method to compare it to a regular expression which matches a phone number, storing the value in variable phone.
+        Then, if there was a match it returns true, if not, false.
+
+    val_ssn(): Function val_ssn() takes an argument and uses a findall method to compare it to a regular expression which matches a social security number, storing the value in variable ssn.
+        Then, if there was a match it returns true, if not, false.
+
+    val_zip(): Function val_zip() takes an argument and uses a findall method to compare it to a regular expression which matches a zip code, storing the value in variable zip.
+        Then, if there was a match it returns true, if not, false.
+
+    main(): Function main() prompts the user to enter a phone number, social security number, and zip code. Then it useses functions val_phone(), val_ssn(), and val_zip() to validate the information,
+        and notifies the user of the result.
+
+Steps:
+
+    1: Function main prompts the user to enter a phone number, social security number, and zip code. It stores this information in variables user_phone, user_ssn, and user_zip
+
+    2: An if/else statement calls function val_phone as a condition, using user_phone as an argument.
+
+    3: Function val_phone compares its argument to a regular expression matching a phone number, storing the result as variable phone. If there is a match, the function returns True, if not, False.
+
+    4. The if/esle statement prints to the user their input, and if was valid based on whether val_phone returned True or False.
+
+    5: An if/else statement calls function val_ssn as a condition, using user_ssn as an argument.
+
+    6: Function val_ssn compares its argument to a regular expression matching a social security number, storing the result as variable ssn. If there is a match, the function returns True, if not, False.
+
+    7. The if/esle statement prints to the user their input, and if it was valid based on whether val_ssn returned True or False.
+
+    8: An if/else statement calls function val_zip as a condition, using user_zip as an argument.
+
+    9: Function val_zip compares its argument to a regular expression matching a zip code, storing the result as variable zip. If there is a match, the function returns True, if not, False.
+
+    10. The if/esle statement prints to the user their input, and if it was valid based on whether val_zip returned True or False.
+
+Link to repository: https://github.com/calebcfd/COP2373
