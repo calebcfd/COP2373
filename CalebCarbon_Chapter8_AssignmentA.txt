@@ -1,0 +1,46 @@
+Created by Caleb Carbon on 6-30-2024
+
+This program prompts the user for input and stores that data by appending it to grades.csv. Then, it reads all data from grades.csv and prints that data to the user formatted as a table.
+
+Variables: 
+
+    n: Prompts the user to enter a number, and converts that input to an integer.
+
+    output: Initializes as an empty list and later stores user input as a 2D array.
+
+    first_name, last_name, exam1, exam2, exam3: Prompts the user for input to be written into grades.csv.
+
+    grades: A name given to grades.csv when it is opened.
+
+    csv_writer: A csv.writer that writes to grades.csv
+
+    csv_reader A csv.reader that reads from grades.csv
+
+Functions: 
+
+    write(): Function write() prompts the user for how many entries they would like to make, and then prompts the user to enter a first name, last name, and three exam scores for each entry.
+        This data is then appended to grades.csv using cav_writer.
+
+    read(): Function read() prints a table by formatting and printing each line in grades.csv.
+
+Steps:
+
+    Step 1: Import csv. Define and call write() and read().
+
+    Step 2: In function write(), variable n prompts the user for how many entries they would like to make, and converts the input to an integer.
+
+    Step 3: A for loop prompts the user for input n times. The input for variables first_name, last_name, exam1, exam2, and exam3 are stores in variable output as a list.
+
+    Step 4: grades.csv is opened in append mode, specifying an empty string as the newline to prevent empty rows when writing with writerow()
+
+    Step 5: csv_writer is created to write to grades.csv, and an empty string is written to move the writter to a new line.
+
+    Step 6: Each list stored in output is appended to grades.csv using a for loop.
+
+    Step 7: In function read(), grades.csv is opened in read mode as grades.
+
+    Step 8: Create csv_reader to read from grades.csv.
+
+    Step 8: For each line in csv_reader, print it to the user formatted to make a table.
+
+Linke to  repository: https://github.com/calebcfd/COP2373
