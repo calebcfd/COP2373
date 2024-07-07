@@ -1,0 +1,60 @@
+Created by Caleb Carbon on 7-7-2024
+
+This program defines a class called BankAcc.
+Then a separate function called test_function walks the user through creating a new instance of the class and using each of the class' methods.
+
+Variables:
+
+    new_rate: In the BankAcc set_rate() method, new_rate takes user input, and converts it to a float. It is then divided by 100 to make a percentage and set as the instance's rate property.
+
+    withdrawn: In the BankAcc withdraw() method, withdrawn takes user input and converts it to a float to be subtracted from the intance's amount property.
+
+    deposited: In the BankAcc deposit() method, deposited takes user input and converts it to a float to be added to the intance's amount property.
+
+    days: In the BankAcc calc_interest() method, days prompts the user to enter a number of days to be used to calculate interest.
+
+    interest: In the BankAcc calc_interest() method, interest calculates the amount of interest that will accrue in the number of days input by the user.
+
+    name: In test_function(), name takes user input to be used as the name property when instancing a new BankAcc.
+
+    number: In test_function(), number takes user input to be used as the number property when instancing a new BankAcc.
+
+    amount: In test_function(), amount takes user input and converts it to a float to be used as the amount property when instancing a new BankAcc.
+
+    rate: In test_function(), rate takes user input, converts it to a float, and divides it by 100 to be used as the rate property when instancing a new BankAcc.
+
+    new_acc: new_acc is the variable name for the class instance made in test_function().
+
+Functions:
+
+    test_function: test_function() guides the user through making a BankAcc class instance and using each of the class' methods on it.
+
+    __init__(self, name, number, amount, rate): In the BankAcc class, the __init__ method takes arguments name, number, amount, and rate and sets them to properties of the same name.
+
+    __str__(self): In the BankAcc class, the __str__ method formats class properties in a readable manner.
+
+    set_rate(self): In the BankAcc class, method set_rate() gets user input and converts it to a float. The input is divided by 100 to make it a percentage and then set as the interest rate.
+
+    withdraw(self): In the BankAcc class, method withdraw() prompts the user for a number, subtracts it from the account balance, and notifies the user of the process.
+
+    deposit(self): In the BankAcc class, method deposit() prompts the user for a number, adds it to the account balance, and notifies the user of the process.
+
+    get_balance(self): In the BankAcc class, method get_balance() prints the balance to the user and returns the account balance number.
+
+    calc_interest(self): In the BankAcc class, method calc_interest() prompts the user for a number of days, calculates the amount of interest as variable interest, and prints it to the user.
+
+Steps:
+
+    Step 1: Define class BankAcc and call test_function()
+
+    Step 2: test_function notifies the user that they will be propted to make a new instance of BankAcc and using each of the class' methods.
+
+    Step 3: test_function collects user input for the name, number, amount, and rate properties. Then instances a new BankAcc class as new_acc.
+
+    Step 4: Use the __str__ method to print the new class instance to the user.
+
+    Step 5: Methods set_rate(), withdraw(), deposit(), get_balance(), and calc_interest() are called individually.
+
+    Step 6: The class object is printed to the user again to display the changes.
+
+Link to repository: https://github.com/calebcfd/COP2373
