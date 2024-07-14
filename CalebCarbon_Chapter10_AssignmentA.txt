@@ -1,0 +1,48 @@
+Created by Caleb Carbon on 7-14-2024
+
+
+This program defines the Money class, a subclass of Decimal. Then, it guides the user through through a test function that uses each of the class' methods.
+
+
+Variables:
+
+    product: Variable product stores the value of the desired output of the add, sub, and mul methods as a Decimal object rounded to 2 decimal places.
+
+    m: Variable m is the money object used in the test function.
+
+    a: Variable a stores the user input that will be added to m.
+
+    s: Variable s stores the user input that will be subtracted from m.
+
+    x: Variable x stores the user input that will multiply the value of m.
+
+
+Functions:
+
+    test_func(): This is a test function that guides the user through each of the Money class' methods.
+
+
+Steps:
+
+    Step 1: Import decimal from Decimal, define the Money class and test_func(), and call test_func().
+
+    Step 2: The test function creates a Money object with a value of 0 and units in USD as variabl m.
+
+    Step 2: The user is notified the value of m and asked for input to add to m as variable a.
+
+    Step 3: Variable a is added to m using the __add__ method.
+            Each method takes an argument, converts it into a Decimal, performs the desired operation, and rounds to two decimal places. The resulting Decimal object is called 'product'.
+            Variable product is used to return a new Money object.
+
+    Step 4: The user is notified the value of m and asked for input to subtract from m as variable s.
+
+    Step 5: Variable s is subtracted from m using the __sub__ method.
+
+    Step 6: The user is notified the value of m and asked for input multiply m by as variable x.
+
+    Step 7: Variable x multiplies m using the __mul__ method.
+
+    Step 8: The user is given the final value of m and the program ends.
+
+
+Link to repository: https://github.com/calebcfd/COP2373
