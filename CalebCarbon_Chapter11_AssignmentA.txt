@@ -1,0 +1,45 @@
+Createb by Caleb Carbon 7/21/2024
+
+This program uses a Deck object to simulate a deck of cards. The main function draws a hand of five cards and gives the user a chance to redraw any of the cards.
+
+Variables:
+
+    ranks: Variable ranks is a list that stores the possible values for a card.
+
+    suits: Variable suits is a list that holds the possible card suits.
+
+    my_deck: Variable my_deck is the Deck object that function main() will use.
+
+    hand: Variable hand is a list that holds 5 cards.
+
+    r: Variable r calculates the rank for a given card
+
+    s: Variable s calculates the suit for a given card
+
+    i: Variable i gets input for which cards to replace.
+
+    d: Variable d creates a list of all single digits in i
+
+Functions:
+
+    discard(): Function discard() takes an integer, adds it to the discards_list, and removes it from the cards_in_play_list.
+
+    main(): Function main() creates a hand of 5 cards, reads it to the user, takes input for cards to replace, and shows the new hand.
+
+Steps:
+
+    Step 1: Function main() creates a Deck object called my_deck.
+
+    Step 2: Variable hand creates a list of five cards drawn from my_deck.
+
+    Step 3: The cards are read to the user.
+
+    Step 4: Variable i gets user input asking which cards to replace.
+
+    Step 5: Variable d creates a list of all single digits from i.
+
+    Step 6: A for loop iterates over d and removes each mentioned card into the discard_list and replaces it with a new draw.
+
+    Step 7: The new hand is printed to the user.
+
+Link to repository: https://github.com/calebcfd/COP2373
