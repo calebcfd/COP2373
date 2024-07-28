@@ -1,0 +1,49 @@
+Created by Caleb Carbon on 7/27/2024
+
+#This program reads data from a csv file as a numpy array. Statistics are caluculated and printed to the user.
+
+Variables:
+
+    reader: Variable reader is a csv reader of the grades file.
+
+    data: Variable data hold the value of the grades file.
+
+    arr: Variable arr is the nump arr of the grades file.
+
+    filt_arr: Variable filt_arr holds all row values as integers.
+
+    exams: Variable exams is a list that holds each exam as another list.
+
+    n: Variable n is the accumlator that counts the number of exams.
+
+    exam_stats: Variable exam_stats holds the values returned by stats().
+
+    all_values: Variable all_values holds all values of all exams.
+
+
+Functions:
+
+    main(): Function main reads the csv file and converts it to an array. Then, it organizes the data and passes it to the stats() function to perform calculations.
+            The stats() function returns the data and it is printed to the user.
+
+    stats(): Function stats() takes a list and returns the mean, median, standard deviation, minimum value, and maximum value of values in that list.
+
+
+Steps: 
+
+    Step 1: Function main opens a csv reader, reads the values as variable data, and makes a numpy array out of it called arr.
+
+    Step 2: Print the first three rows to the user.
+
+    Step 3: Variable filt_arr holds the exam values and converts them to integers.
+
+    Step 4: Variable exams populates with a list which holds the values of each exam.
+
+    Step 5: A for loop iterates over each exam in exams, calling stats on each one and printing the data to the user.
+
+    Step 6: Variable all_values populates with each value from each exam.
+
+    Step 7: Call stats() on all_values and print statistics to user.
+
+
+Link to repository: https://github.com/calebcfd/COP2373
